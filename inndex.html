@@ -1,0 +1,67 @@
+<div class="container">
+    <link rel="stylesheet" href="bb2.css">
+    <div class="title">Data Base For Raw Items</div>
+    <form action="#">
+      <div class="user__details">
+        <div class="input__box">
+          <span class="details">Food Name</span>
+          <input type="text" placeholder="eg Potato" required>
+        </div>
+        <div class="input__box">
+          <span class="details">Seller name</span>
+          <input type="text" placeholder="" required>
+        </div>
+        <div class="input__box">
+          <span class="details">Email of Seller</span>
+          <input type="email" placeholder="" required>
+        </div>
+        <div class="input__box">
+          <span class="details">Phone Number of Seller</span>
+          <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="" required>
+        </div>
+        <div class="input__box">
+          <span class="details">Price of food item</span>
+          <input type="password" placeholder="enter in ₹" required>
+        </div>
+        <div class="input__box">
+          <span class="details">Enter Quantity</span>
+          <input type="password" placeholder="(kg in solids and liters in case of liquid)" required>
+        </div>
+  
+      </div>
+      <div class="gender__details">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+        <input type="radio" name="gender" id="dot-3">
+        <span class="gender__title">Requires refrigeration</span>
+        <div class="category">
+          <label for="dot-1">
+            <span class="dot one"></span>
+            <span>Yes</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span>No</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span>Don't Know</span>
+          </label>
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Add to Database">
+      </div>
+      <!-- New button for "See database" -->
+      <div class="button">
+        <button onclick="seeDatabase()">See Database</button>
+      </div>
+    </form>
+    <footer>&copy; Shresth Verma RA2111003011335</footer>
+</div>
+
+<script>
+    function seeDatabase() {
+        window.location.href = "abcd.in";
+    }
+</script>
